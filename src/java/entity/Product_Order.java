@@ -12,8 +12,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = " order")
-public class Order implements Serializable {
+@Table(name = "product_order")
+public class Product_Order implements Serializable {
 
     @Id
     @Column(name = "id")
@@ -31,7 +31,7 @@ public class Order implements Serializable {
     @JoinColumn(name = "address_id")
     private Address address;
 
-    public Order() {
+    public Product_Order() {
     }
 
     /**

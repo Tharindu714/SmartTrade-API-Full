@@ -20,8 +20,8 @@ public class Order_item implements Serializable {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "orders_id")
-    private Order order;
+    @JoinColumn(name = "order_id")
+    private Product_Order order;
 
     @ManyToOne
     @JoinColumn(name = "product_id")
@@ -54,14 +54,14 @@ public class Order_item implements Serializable {
     /**
      * @return the order
      */
-    public Order getOrder() {
+    public Product_Order getOrder() {
         return order;
     }
 
     /**
      * @param order the order to set
      */
-    public void setOrder(Order order) {
+    public void setOrder(Product_Order order) {
         this.order = order;
     }
 

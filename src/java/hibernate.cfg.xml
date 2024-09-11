@@ -20,7 +20,7 @@
         <mapping class="entity.City" />  
         <mapping class="entity.Address" />  
         <mapping class="entity.Order_Status" />  
-        <mapping class="entity.Order" />  
+        <mapping class="entity.Product_Order" />  
         <mapping class="entity.Order_item" />  
     </session-factory>
 </hibernate-configuration>

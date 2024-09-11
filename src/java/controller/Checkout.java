@@ -167,7 +167,7 @@ public class Checkout extends HttpServlet {
     private void saveOrders(Session session, Transaction transaction, User user, Address address, JsonObject responseJsonObject) {
         try {
             //create order in DB
-            entity.Order order = new entity.Order();
+            entity.Product_Order order = new entity.Product_Order();
             order.setAddress(address);
             order.setDate_time(new Date());
             order.setUser(user);
